@@ -1,15 +1,20 @@
-
 from operations import addition
-from operations import subtraction
-from operations import multiplication
 from operations import division
+from operations import multiplication
+from operations import subtraction
 
-welcome = "\nWelcome to the calculator program."
-welcome += "\nSelect the following options. "
-print(welcome.upper())
+print(
+        "\nWelcome to the calculator program."
+        "\nSelect the following options. ".upper()
+        )
 
-menu = "\na. Addition \nb. Subtraction \nc. Multiplication \nd. Division \n\nWrite (quit) to exit the program."
-print(menu)
+print("\na. Addition "
+      "\nb. Subtraction "
+      "\nc. Multiplication "
+      "\nd. Division "
+      "\n"
+      "\nWrite (quit) to exit the program."
+      )
 
 while True:
     try:
@@ -33,4 +38,3 @@ while True:
 
     except ValueError:
         print("Error! Just use digits.")
-
